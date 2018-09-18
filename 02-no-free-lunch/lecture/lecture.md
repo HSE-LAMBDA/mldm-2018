@@ -61,7 +61,7 @@ $$y = \frac{1}{12}(91 x^5 - 1519 x^4 + 9449 x^3 - 26705 x^2 + 33588 x - 14940)?$
 ### Terminology
 
 Machine Learning is about learning algorithms $A$ that:
-  - defined on sample set $\mathcal{X}$ (e.g. $\mathbb{R}^n$) and targets $\mathcal{Y}$ (e.g. $\{0, 1\}$):
+  - defined on sample set $\mathcal{X}$ (e.g. $\{0, \dots, 255\}^{28 \times 28}$) and targets $\mathcal{Y}$ (e.g. $\{0, 1, \dots 9\}$):
     - $\mathcal{X}$ and $\mathcal{Y}$ are discrete;
   - take a problem (dataset) $D = (X, y) \subseteq \mathcal{X} \times \mathcal{Y}$;
   - learn relation between $\mathcal{X}$ and $\mathcal{Y}$;
