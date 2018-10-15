@@ -207,15 +207,13 @@ Application:
 
 ### Memetic algorithms
 
-`\vspace*{5mm}`
+`\vspace*{-2.5mm}`
 
 ```python
 def memetic(global_step=evolutionary,
             locally_optimize=annealing):
-
   population = []
   mature_population = [ <random> ]
-
   while ...:
     population = global_step(mature_population)
     mature_population = [
