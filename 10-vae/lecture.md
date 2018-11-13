@@ -77,15 +77,37 @@ P(X) = \int P(X \mid z) P(z) dz = \E_z P(X \mid z)
 
 $$P(X) = \int P(X \mid z) P(z) dz = \E_Z P(X \mid Z)$$
 
-In order to make sampling tractable, P(Z) can be replaced by some $Q(Z \mid X)$.
+In order to make sampling tractable, P(Z) can be replaced by some $Q(Z \mid X)$:
 
 ~~~equation*
-\log P(X) = \mathrm{KL}\left(Q(Z \mid X) \dmid P(Z \mid X) \right) + \mathcal{L}(X) \geq \mathcal{L}(X)
+P(X) = \E_Z P(X \mid Z) \to \E_{Z \sim Q(Z \mid X)} P(X \mid Z)
+~~~
+
+Let's consider KL divergence:
+
+~~~equation*
+\mathrm{KL}\left( Q(Z \mid X) \mid P(Z \mid X) \right) := \E_{Z \sim Q(Z \mid X )} \left[ \log Q(Z \mid X ) - \log P(Z \mid X) \right]
+~~~
+
+### Variational bound
+
+~~~multline*
+\mathrm{KL}\left( Q(Z \mid X ) \mid P(Z \mid X) \right) := \\ \E_{Z \sim Q(Z \mid X )} \left[ \log Q(Z \mid X ) - \log P(Z \mid X) \right] = \\
+  \E_{Z \sim Q(Z \mid X )} \left[ \log Q(Z \mid X ) - \log P(X \mid Z) - \log P(Z) \right] + \log P(X)
 ~~~
 
 ~~~multline*
-  \mathcal{L}(X) = \E_{Z \sim Q}\left[ -\log Q(Z \mid X ) + \log P(X, Z) \right] =\\
-    - \mathrm{KL}\left( Q(Z \mid X) \dmid P(Z) \right) + \E_{z \sim Q(Z \mid X)}\left[ \log P(X \mid Z) \right]
+    \log P(X) - \mathrm{KL}\left( Q(Z \mid X ) \mid P(Z \mid X) \right) = \\ \E_{Z \sim Q(Z \mid X )} \left[ \log P(X \mid Z) \right] - \mathrm{KL}\left( Q(Z \mid X) \mid P(Z) \right)
+~~~
+
+### Variational bound
+
+~~~equation*
+  \mathcal{L}(X) = \E_{Z \sim Q(Z \mid X )} \left[ \log P(X \mid Z) \right] - \mathrm{KL}\left( Q(Z \mid X) \mid P(Z) \right)
+~~~
+
+~~~equation*
+  \log P(X) \geq \mathcal{L}(X) \to \max
 ~~~
 
 ### VAE objective
