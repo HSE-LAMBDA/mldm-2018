@@ -119,6 +119,54 @@ Is it a Diplodocus?
 
 ### Which ML algorithms are the best?
 
+### IQ test: try to learn yourself!
+
+First question from [MENSA](https://www.mensa.org/workout/questions) website:`\\`
+*Following the pattern shown in the number sequence below, what is the missing number?*
+
+$$1, 8, 27, ?, 125, 216$$
+
+Possible answers:
+- 36
+- 45
+- 46
+- 64
+- 99
+
+### IQ test: try to learn yourself!
+
+First question from [MENSA](https://www.mensa.org/workout/questions) website:`\\`
+*Following the pattern shown in the number sequence below, what is the missing number?*
+
+~~~center
+\begin{tabular}{c | c c c c c}
+$X_{\mathrm{train}}$ & 1 & 2 & 3 & 5 & 6\\
+\hline
+$y_{\mathrm{train}}$ & 1 & 8 & 27 & 125 & 216
+\end{tabular}
+~~~
+
+`\vspace*{5mm}`
+
+$$X_\mathrm{test} = (4, )$$
+
+### IQ test: try to learn yourself!
+
+My solution:
+$$y = \frac{1}{12}(91 x^5 - 1519 x^4 + 9449 x^3 - 26705 x^2 + 33588 x - 14940)$$
+
+- fits perfectly!
+
+My answer:
+- 99
+
+### IQ test
+
+Why solution:
+$$y = x^3$$
+seems much more suitable than
+$$y = \frac{1}{12}(91 x^5 - 1519 x^4 + 9449 x^3 - 26705 x^2 + 33588 x - 14940)?$$
+
 ### No Free Lunch theorem
 
 Given:
