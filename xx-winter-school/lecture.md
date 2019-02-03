@@ -154,29 +154,48 @@ $$\mathrm{output} = \sigma(b + \sum_i w_i x_i)$$
 
 ### Overfitting
 
-![width=0.75](imgs/overfitting.png)
+### Overfitting
+
+![width=1](imgs/overfitting.png)
+
+***
+
+- dense Neural Networks tend to have a huge number of parameters;
+- they can memorize examples!
 
 ### Put yourself into network shoes.
 
-It is Diplodocus:
+It is a Diplodocus:
 
 ![width=1](imgs/diplodocus-1.jpg)
 
 ### Put yourself into network shoes.
 
-It is Diplodocus:
+It is a Diplodocus:
 
 ![width=1](imgs/diplodocus-2.jpg)
 
 ### Put yourself into network shoes.
 
-Is it Diplodocus?
+It is not a Diplodocus:
+
+![width=1](imgs/triceratops.jpg)
+
+### Put yourself into network shoes.
+
+It is not a Diplodocus:
+
+![width=1](imgs/trex.png)
+
+### Put yourself into network shoes.
+
+Is it a Diplodocus?
 
 ![width=1](imgs/not-diplodocus-1.png)
 
 ### Put yourself into network shoes.
 
-Is it Diplodocus?
+Is it a Diplodocus?
 
 ![height=0.8](imgs/not-diplodocus-2.jpg)
 
@@ -185,6 +204,8 @@ Is it Diplodocus?
 Is it Diplodocus?
 
 ![width=1](imgs/diplodocus-3.jpg)
+
+### Convolutional Networks
 
 ### Convolutional Networks
 
