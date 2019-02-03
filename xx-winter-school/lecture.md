@@ -201,7 +201,7 @@ Is it a Diplodocus?
 
 ### Put yourself into network shoes.
 
-Is it Diplodocus?
+Is it a Diplodocus?
 
 ![width=1](imgs/diplodocus-3.jpg)
 
