@@ -34,6 +34,7 @@
 - solver : $$\mathrm{solver} : \mathrm{data} \to \mathrm{model};$$
   - loss function: $$\mathcal{L}(f, \mathrm{data}) = \sum_{x, y \in \mathrm{data}} \mathrm{error}(f(x), y);$$
   - optimizer: gradient descent, genetic algorithms etc.
+- quality metric: shows how good algorithm is.
 
 ### Linear models
 
@@ -57,6 +58,64 @@ w &\in& \mathrm{R}^2, b \in \mathrm{R}
 ***
 
 ![width=1](imgs/nn.png)
+
+### Over/under-fitting
+
+### Over/under-fitting
+
+![width=1](imgs/overfitting.png)
+
+### Put yourself into network shoes.
+
+It is a Diplodocus:
+
+![width=1](imgs/diplodocus-1.jpg)
+
+### Put yourself into network shoes.
+
+It is a Diplodocus:
+
+![width=1](imgs/diplodocus-2.jpg)
+
+### Put yourself into network shoes.
+
+It is not a Diplodocus:
+
+![width=1](imgs/triceratops.jpg)
+
+### Put yourself into network shoes.
+
+It is not a Diplodocus:
+
+![width=1](imgs/trex.png)
+
+### Put yourself into network shoes.
+
+Is it a Diplodocus?
+
+![width=1](imgs/not-diplodocus-1.png)
+
+### Put yourself into network shoes.
+
+Is it a Diplodocus?
+
+![height=0.8](imgs/not-diplodocus-2.jpg)
+
+### Put yourself into network shoes.
+
+Is it a Diplodocus?
+
+![width=1](imgs/diplodocus-3.jpg)
+
+### How to detect
+
+- split dataset into two:
+  - training set --- for selecting decision function;
+  - validation set --- for **independent** quality metric evaluation.
+`\\[5mm]`
+- $Q_\mathrm{validation} \approx Q_\mathrm{train}$ and both low --- probably underfitting;
+- $Q_\mathrm{validation} \approx Q_\mathrm{train}$ and both high --- just right;
+- $Q_\mathrm{validation} < Q_\mathrm{train}$ --- overfitting;
 
 ### Which ML algorithms are the best?
 
@@ -151,59 +210,6 @@ $$\mathrm{output} = \sigma(b + \sum_i w_i x_i)$$
 
 - neurons are organized into layer;
 - layer are typically connected sequentially.
-
-### Overfitting
-
-### Overfitting
-
-![width=1](imgs/overfitting.png)
-
-***
-
-- dense Neural Networks tend to have a huge number of parameters;
-- they can memorize examples!
-
-### Put yourself into network shoes.
-
-It is a Diplodocus:
-
-![width=1](imgs/diplodocus-1.jpg)
-
-### Put yourself into network shoes.
-
-It is a Diplodocus:
-
-![width=1](imgs/diplodocus-2.jpg)
-
-### Put yourself into network shoes.
-
-It is not a Diplodocus:
-
-![width=1](imgs/triceratops.jpg)
-
-### Put yourself into network shoes.
-
-It is not a Diplodocus:
-
-![width=1](imgs/trex.png)
-
-### Put yourself into network shoes.
-
-Is it a Diplodocus?
-
-![width=1](imgs/not-diplodocus-1.png)
-
-### Put yourself into network shoes.
-
-Is it a Diplodocus?
-
-![height=0.8](imgs/not-diplodocus-2.jpg)
-
-### Put yourself into network shoes.
-
-Is it a Diplodocus?
-
-![width=1](imgs/diplodocus-3.jpg)
 
 ### Convolutional Networks
 
