@@ -350,7 +350,7 @@ $$O(x) = \sum_i \frac{\exp(\alpha_i)}{\sum_k \exp(\alpha_k)} O_i(x)$$
 3. Neural Networks and Deep Learning.
 4. Convolutional Neural Network.
 5. Optimal Architecture Search.
-6. The course's syllabus.
+6. The course syllabus.
 
 ### References
 - Wolpert DH. The supervised learning no-free-lunch theorems. InSoft computing and industry 2002 (pp. 25-42). Springer, London.
